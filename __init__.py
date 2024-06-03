@@ -5,9 +5,9 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__)                                                                                                                  
                                                                                                                                        
-@app.route('/')
-def hello_world():
-    return "<h2>Bonjour tout le monde !</h2><p>Pour accéder à vos exerices cliquez <a href='./exercices/'>Ici</a></p>"
+@app.route('/contact/')
+def MaPremiereAPI():
+    return "<h2>Ma page de contact</h2>"<p>Pour accéder à vos exerices cliquez <a href='./exercices/'>Ici</a></p>"
 
 @app.route('/exercices/')
 def exercices():
@@ -16,6 +16,4 @@ def exercices():
 if __name__ == "__main__":
   app.run(debug=True)
 
-@app.route('/contact/')
-def MaPremiereAPI():
-    return "<h2>Ma page de contact</h2>"
+
